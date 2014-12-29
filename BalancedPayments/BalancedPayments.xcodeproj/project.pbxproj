@@ -16,6 +16,7 @@
 		D85BD8561A52052C004C5DBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85BD8551A52052C004C5DBC /* Images.xcassets */; };
 		D85BD8591A52052C004C5DBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85BD8571A52052C004C5DBC /* LaunchScreen.xib */; };
 		D85BD8651A52052C004C5DBC /* BalancedPaymentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */; };
+		D8D717AB1A5212D400D8C4D6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D717AA1A5212D400D8C4D6 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		D85BD85E1A52052C004C5DBC /* BalancedPaymentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalancedPaymentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85BD8631A52052C004C5DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalancedPaymentsTests.m; sourceTree = "<group>"; };
+		D8D717A91A5212D400D8C4D6 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D8D717AA1A5212D400D8C4D6 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FC6E88D479A13AFB33F9DE1C /* Pods-BalancedPaymentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPaymentsTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPaymentsTests/Pods-BalancedPaymentsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +120,8 @@
 				D85BD84D1A52052C004C5DBC /* AppDelegate.m */,
 				D85BD84F1A52052C004C5DBC /* ViewController.h */,
 				D85BD8501A52052C004C5DBC /* ViewController.m */,
+				D8D717A91A5212D400D8C4D6 /* RootViewController.h */,
+				D8D717AA1A5212D400D8C4D6 /* RootViewController.m */,
 				D85BD8521A52052C004C5DBC /* Main.storyboard */,
 				D85BD8551A52052C004C5DBC /* Images.xcassets */,
 				D85BD8571A52052C004C5DBC /* LaunchScreen.xib */,
@@ -320,6 +325,7 @@
 			files = (
 				D85BD8511A52052C004C5DBC /* ViewController.m in Sources */,
 				D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */,
+				D8D717AB1A5212D400D8C4D6 /* RootViewController.m in Sources */,
 				D85BD84B1A52052C004C5DBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

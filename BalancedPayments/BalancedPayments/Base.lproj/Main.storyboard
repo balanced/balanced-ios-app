@@ -30,7 +30,7 @@
         <!--Root View Controller-->
         <scene sceneID="aYD-nl-1kD">
             <objects>
-                <tableViewController id="5Yc-wK-0s2" sceneMemberID="viewController">
+                <tableViewController id="5Yc-wK-0s2" customClass="RootViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="O1h-RZ-YY4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,14 @@
                             <outlet property="delegate" destination="5Yc-wK-0s2" id="mBf-Xb-0AM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="R3L-ff-URP"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="R3L-ff-URP">
+                        <barButtonItem key="leftBarButtonItem" title="☰" id="2dc-wa-V18"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sidebarButton" destination="2dc-wa-V18" id="R4Z-SD-sRL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynH-1z-Fqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
