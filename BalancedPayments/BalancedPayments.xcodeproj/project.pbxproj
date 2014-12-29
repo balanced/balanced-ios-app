@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8800BD41A51F8F600A909ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BD31A51F8F600A909ED /* main.m */; };
+		D8800BD71A51F8F600A909ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BD61A51F8F600A909ED /* AppDelegate.m */; };
+		D8800BDA1A51F8F600A909ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BD91A51F8F600A909ED /* ViewController.m */; };
+		D8800BDD1A51F8F600A909ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8800BDB1A51F8F600A909ED /* Main.storyboard */; };
+		D8800BDF1A51F8F600A909ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8800BDE1A51F8F600A909ED /* Images.xcassets */; };
+		D8800BE21A51F8F600A909ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8800BE01A51F8F600A909ED /* LaunchScreen.xib */; };
+		D8800BEE1A51F8F600A909ED /* BalancedPaymentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BED1A51F8F600A909ED /* BalancedPaymentsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8800BE81A51F8F600A909ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8800BC61A51F8F600A909ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8800BCD1A51F8F600A909ED;
+			remoteInfo = BalancedPayments;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8800BCE1A51F8F600A909ED /* BalancedPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8800BD21A51F8F600A909ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8800BD31A51F8F600A909ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8800BD51A51F8F600A909ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8800BD61A51F8F600A909ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8800BD81A51F8F600A909ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8800BD91A51F8F600A909ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8800BDC1A51F8F600A909ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8800BDE1A51F8F600A909ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8800BE11A51F8F600A909ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D8800BE71A51F8F600A909ED /* BalancedPaymentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalancedPaymentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8800BEC1A51F8F600A909ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8800BED1A51F8F600A909ED /* BalancedPaymentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalancedPaymentsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8800BCB1A51F8F600A909ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8800BE41A51F8F600A909ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8800BC51A51F8F600A909ED = {
+			isa = PBXGroup;
+			children = (
+				D8800BD01A51F8F600A909ED /* BalancedPayments */,
+				D8800BEA1A51F8F600A909ED /* BalancedPaymentsTests */,
+				D8800BCF1A51F8F600A909ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8800BCF1A51F8F600A909ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8800BCE1A51F8F600A909ED /* BalancedPayments.app */,
+				D8800BE71A51F8F600A909ED /* BalancedPaymentsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8800BD01A51F8F600A909ED /* BalancedPayments */ = {
+			isa = PBXGroup;
+			children = (
+				D8800BD51A51F8F600A909ED /* AppDelegate.h */,
+				D8800BD61A51F8F600A909ED /* AppDelegate.m */,
+				D8800BD81A51F8F600A909ED /* ViewController.h */,
+				D8800BD91A51F8F600A909ED /* ViewController.m */,
+				D8800BDB1A51F8F600A909ED /* Main.storyboard */,
+				D8800BDE1A51F8F600A909ED /* Images.xcassets */,
+				D8800BE01A51F8F600A909ED /* LaunchScreen.xib */,
+				D8800BD11A51F8F600A909ED /* Supporting Files */,
+			);
+			path = BalancedPayments;
+			sourceTree = "<group>";
+		};
+		D8800BD11A51F8F600A909ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8800BD21A51F8F600A909ED /* Info.plist */,
+				D8800BD31A51F8F600A909ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8800BEA1A51F8F600A909ED /* BalancedPaymentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8800BED1A51F8F600A909ED /* BalancedPaymentsTests.m */,
+				D8800BEB1A51F8F600A909ED /* Supporting Files */,
+			);
+			path = BalancedPaymentsTests;
+			sourceTree = "<group>";
+		};
+		D8800BEB1A51F8F600A909ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8800BEC1A51F8F600A909ED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8800BCD1A51F8F600A909ED /* BalancedPayments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8800BF11A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPayments" */;
+			buildPhases = (
+				D8800BCA1A51F8F600A909ED /* Sources */,
+				D8800BCB1A51F8F600A909ED /* Frameworks */,
+				D8800BCC1A51F8F600A909ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BalancedPayments;
+			productName = BalancedPayments;
+			productReference = D8800BCE1A51F8F600A909ED /* BalancedPayments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8800BE61A51F8F600A909ED /* BalancedPaymentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8800BF41A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */;
+			buildPhases = (
+				D8800BE31A51F8F600A909ED /* Sources */,
+				D8800BE41A51F8F600A909ED /* Frameworks */,
+				D8800BE51A51F8F600A909ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8800BE91A51F8F600A909ED /* PBXTargetDependency */,
+			);
+			name = BalancedPaymentsTests;
+			productName = BalancedPaymentsTests;
+			productReference = D8800BE71A51F8F600A909ED /* BalancedPaymentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8800BC61A51F8F600A909ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Balanced Payments";
+				TargetAttributes = {
+					D8800BCD1A51F8F600A909ED = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D8800BE61A51F8F600A909ED = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D8800BCD1A51F8F600A909ED;
+					};
+				};
+			};
+			buildConfigurationList = D8800BC91A51F8F600A909ED /* Build configuration list for PBXProject "BalancedPayments" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8800BC51A51F8F600A909ED;
+			productRefGroup = D8800BCF1A51F8F600A909ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8800BCD1A51F8F600A909ED /* BalancedPayments */,
+				D8800BE61A51F8F600A909ED /* BalancedPaymentsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8800BCC1A51F8F600A909ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8800BDD1A51F8F600A909ED /* Main.storyboard in Resources */,
+				D8800BE21A51F8F600A909ED /* LaunchScreen.xib in Resources */,
+				D8800BDF1A51F8F600A909ED /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8800BE51A51F8F600A909ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8800BCA1A51F8F600A909ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8800BDA1A51F8F600A909ED /* ViewController.m in Sources */,
+				D8800BD71A51F8F600A909ED /* AppDelegate.m in Sources */,
+				D8800BD41A51F8F600A909ED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8800BE31A51F8F600A909ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8800BEE1A51F8F600A909ED /* BalancedPaymentsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8800BE91A51F8F600A909ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8800BCD1A51F8F600A909ED /* BalancedPayments */;
+			targetProxy = D8800BE81A51F8F600A909ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8800BDB1A51F8F600A909ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8800BDC1A51F8F600A909ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8800BE01A51F8F600A909ED /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8800BE11A51F8F600A909ED /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8800BEF1A51F8F600A909ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8800BF01A51F8F600A909ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8800BF21A51F8F600A909ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BalancedPayments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8800BF31A51F8F600A909ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BalancedPayments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D8800BF51A51F8F600A909ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BalancedPaymentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalancedPayments.app/BalancedPayments";
+			};
+			name = Debug;
+		};
+		D8800BF61A51F8F600A909ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BalancedPaymentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalancedPayments.app/BalancedPayments";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8800BC91A51F8F600A909ED /* Build configuration list for PBXProject "BalancedPayments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8800BEF1A51F8F600A909ED /* Debug */,
+				D8800BF01A51F8F600A909ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8800BF11A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPayments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8800BF21A51F8F600A909ED /* Debug */,
+				D8800BF31A51F8F600A909ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8800BF41A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8800BF51A51F8F600A909ED /* Debug */,
+				D8800BF61A51F8F600A909ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8800BC61A51F8F600A909ED /* Project object */;
+}
