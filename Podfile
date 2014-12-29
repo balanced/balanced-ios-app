@@ -6,8 +6,9 @@ platform :ios, "7.0"
 inhibit_all_warnings!
 
 source 'https://github.com/CocoaPods/Specs.git'
+xcodeproj 'BalancedPayments/BalancedPayments'
 
-target 'Gofugue' do
+target 'BalancedPayments' do
     pod 'CocoaLumberjack', '~> 1.9'
     pod 'AFNetworking', '~> 2.0'
     pod 'PromiseKit', '~> 0.9'
@@ -16,7 +17,7 @@ target 'Gofugue' do
     pod 'CAAnimationBlocks'
 end
 
-target 'GofugueTests' do
+target 'BalancedPaymentsTests' do
     pod 'CocoaLumberjack', '~> 1.9'
     pod 'AFNetworking', '~> 2.0'
     pod 'PromiseKit', '~> 0.9'

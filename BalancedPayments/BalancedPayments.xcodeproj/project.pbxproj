@@ -7,50 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8800BD41A51F8F600A909ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BD31A51F8F600A909ED /* main.m */; };
-		D8800BD71A51F8F600A909ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BD61A51F8F600A909ED /* AppDelegate.m */; };
-		D8800BDA1A51F8F600A909ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BD91A51F8F600A909ED /* ViewController.m */; };
-		D8800BDD1A51F8F600A909ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8800BDB1A51F8F600A909ED /* Main.storyboard */; };
-		D8800BDF1A51F8F600A909ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8800BDE1A51F8F600A909ED /* Images.xcassets */; };
-		D8800BE21A51F8F600A909ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8800BE01A51F8F600A909ED /* LaunchScreen.xib */; };
-		D8800BEE1A51F8F600A909ED /* BalancedPaymentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8800BED1A51F8F600A909ED /* BalancedPaymentsTests.m */; };
+		D85BD84B1A52052C004C5DBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD84A1A52052C004C5DBC /* main.m */; };
+		D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD84D1A52052C004C5DBC /* AppDelegate.m */; };
+		D85BD8511A52052C004C5DBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD8501A52052C004C5DBC /* ViewController.m */; };
+		D85BD8541A52052C004C5DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85BD8521A52052C004C5DBC /* Main.storyboard */; };
+		D85BD8561A52052C004C5DBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85BD8551A52052C004C5DBC /* Images.xcassets */; };
+		D85BD8591A52052C004C5DBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85BD8571A52052C004C5DBC /* LaunchScreen.xib */; };
+		D85BD8651A52052C004C5DBC /* BalancedPaymentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D8800BE81A51F8F600A909ED /* PBXContainerItemProxy */ = {
+		D85BD85F1A52052C004C5DBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D8800BC61A51F8F600A909ED /* Project object */;
+			containerPortal = D85BD83D1A52052C004C5DBC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8800BCD1A51F8F600A909ED;
+			remoteGlobalIDString = D85BD8441A52052C004C5DBC;
 			remoteInfo = BalancedPayments;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8800BCE1A51F8F600A909ED /* BalancedPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8800BD21A51F8F600A909ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8800BD31A51F8F600A909ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8800BD51A51F8F600A909ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D8800BD61A51F8F600A909ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D8800BD81A51F8F600A909ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D8800BD91A51F8F600A909ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D8800BDC1A51F8F600A909ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8800BDE1A51F8F600A909ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D8800BE11A51F8F600A909ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D8800BE71A51F8F600A909ED /* BalancedPaymentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalancedPaymentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8800BEC1A51F8F600A909ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8800BED1A51F8F600A909ED /* BalancedPaymentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalancedPaymentsTests.m; sourceTree = "<group>"; };
+		D85BD8451A52052C004C5DBC /* BalancedPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85BD8491A52052C004C5DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85BD84A1A52052C004C5DBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D85BD84C1A52052C004C5DBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D85BD84D1A52052C004C5DBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D85BD84F1A52052C004C5DBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D85BD8501A52052C004C5DBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D85BD8531A52052C004C5DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D85BD8551A52052C004C5DBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D85BD8581A52052C004C5DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D85BD85E1A52052C004C5DBC /* BalancedPaymentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalancedPaymentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85BD8631A52052C004C5DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalancedPaymentsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D8800BCB1A51F8F600A909ED /* Frameworks */ = {
+		D85BD8421A52052C004C5DBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8800BE41A51F8F600A909ED /* Frameworks */ = {
+		D85BD85B1A52052C004C5DBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,61 +60,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D8800BC51A51F8F600A909ED = {
+		D85BD83C1A52052C004C5DBC = {
 			isa = PBXGroup;
 			children = (
-				D8800BD01A51F8F600A909ED /* BalancedPayments */,
-				D8800BEA1A51F8F600A909ED /* BalancedPaymentsTests */,
-				D8800BCF1A51F8F600A909ED /* Products */,
+				D85BD8471A52052C004C5DBC /* BalancedPayments */,
+				D85BD8611A52052C004C5DBC /* BalancedPaymentsTests */,
+				D85BD8461A52052C004C5DBC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D8800BCF1A51F8F600A909ED /* Products */ = {
+		D85BD8461A52052C004C5DBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8800BCE1A51F8F600A909ED /* BalancedPayments.app */,
-				D8800BE71A51F8F600A909ED /* BalancedPaymentsTests.xctest */,
+				D85BD8451A52052C004C5DBC /* BalancedPayments.app */,
+				D85BD85E1A52052C004C5DBC /* BalancedPaymentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8800BD01A51F8F600A909ED /* BalancedPayments */ = {
+		D85BD8471A52052C004C5DBC /* BalancedPayments */ = {
 			isa = PBXGroup;
 			children = (
-				D8800BD51A51F8F600A909ED /* AppDelegate.h */,
-				D8800BD61A51F8F600A909ED /* AppDelegate.m */,
-				D8800BD81A51F8F600A909ED /* ViewController.h */,
-				D8800BD91A51F8F600A909ED /* ViewController.m */,
-				D8800BDB1A51F8F600A909ED /* Main.storyboard */,
-				D8800BDE1A51F8F600A909ED /* Images.xcassets */,
-				D8800BE01A51F8F600A909ED /* LaunchScreen.xib */,
-				D8800BD11A51F8F600A909ED /* Supporting Files */,
+				D85BD84C1A52052C004C5DBC /* AppDelegate.h */,
+				D85BD84D1A52052C004C5DBC /* AppDelegate.m */,
+				D85BD84F1A52052C004C5DBC /* ViewController.h */,
+				D85BD8501A52052C004C5DBC /* ViewController.m */,
+				D85BD8521A52052C004C5DBC /* Main.storyboard */,
+				D85BD8551A52052C004C5DBC /* Images.xcassets */,
+				D85BD8571A52052C004C5DBC /* LaunchScreen.xib */,
+				D85BD8481A52052C004C5DBC /* Supporting Files */,
 			);
 			path = BalancedPayments;
 			sourceTree = "<group>";
 		};
-		D8800BD11A51F8F600A909ED /* Supporting Files */ = {
+		D85BD8481A52052C004C5DBC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8800BD21A51F8F600A909ED /* Info.plist */,
-				D8800BD31A51F8F600A909ED /* main.m */,
+				D85BD8491A52052C004C5DBC /* Info.plist */,
+				D85BD84A1A52052C004C5DBC /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D8800BEA1A51F8F600A909ED /* BalancedPaymentsTests */ = {
+		D85BD8611A52052C004C5DBC /* BalancedPaymentsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D8800BED1A51F8F600A909ED /* BalancedPaymentsTests.m */,
-				D8800BEB1A51F8F600A909ED /* Supporting Files */,
+				D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */,
+				D85BD8621A52052C004C5DBC /* Supporting Files */,
 			);
 			path = BalancedPaymentsTests;
 			sourceTree = "<group>";
 		};
-		D8800BEB1A51F8F600A909ED /* Supporting Files */ = {
+		D85BD8621A52052C004C5DBC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8800BEC1A51F8F600A909ED /* Info.plist */,
+				D85BD8631A52052C004C5DBC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,13 +122,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8800BCD1A51F8F600A909ED /* BalancedPayments */ = {
+		D85BD8441A52052C004C5DBC /* BalancedPayments */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8800BF11A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPayments" */;
+			buildConfigurationList = D85BD8681A52052C004C5DBC /* Build configuration list for PBXNativeTarget "BalancedPayments" */;
 			buildPhases = (
-				D8800BCA1A51F8F600A909ED /* Sources */,
-				D8800BCB1A51F8F600A909ED /* Frameworks */,
-				D8800BCC1A51F8F600A909ED /* Resources */,
+				D85BD8411A52052C004C5DBC /* Sources */,
+				D85BD8421A52052C004C5DBC /* Frameworks */,
+				D85BD8431A52052C004C5DBC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -136,46 +136,46 @@
 			);
 			name = BalancedPayments;
 			productName = BalancedPayments;
-			productReference = D8800BCE1A51F8F600A909ED /* BalancedPayments.app */;
+			productReference = D85BD8451A52052C004C5DBC /* BalancedPayments.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8800BE61A51F8F600A909ED /* BalancedPaymentsTests */ = {
+		D85BD85D1A52052C004C5DBC /* BalancedPaymentsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8800BF41A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */;
+			buildConfigurationList = D85BD86B1A52052C004C5DBC /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */;
 			buildPhases = (
-				D8800BE31A51F8F600A909ED /* Sources */,
-				D8800BE41A51F8F600A909ED /* Frameworks */,
-				D8800BE51A51F8F600A909ED /* Resources */,
+				D85BD85A1A52052C004C5DBC /* Sources */,
+				D85BD85B1A52052C004C5DBC /* Frameworks */,
+				D85BD85C1A52052C004C5DBC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D8800BE91A51F8F600A909ED /* PBXTargetDependency */,
+				D85BD8601A52052C004C5DBC /* PBXTargetDependency */,
 			);
 			name = BalancedPaymentsTests;
 			productName = BalancedPaymentsTests;
-			productReference = D8800BE71A51F8F600A909ED /* BalancedPaymentsTests.xctest */;
+			productReference = D85BD85E1A52052C004C5DBC /* BalancedPaymentsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D8800BC61A51F8F600A909ED /* Project object */ = {
+		D85BD83D1A52052C004C5DBC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Balanced Payments";
 				TargetAttributes = {
-					D8800BCD1A51F8F600A909ED = {
+					D85BD8441A52052C004C5DBC = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					D8800BE61A51F8F600A909ED = {
+					D85BD85D1A52052C004C5DBC = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = D8800BCD1A51F8F600A909ED;
+						TestTargetID = D85BD8441A52052C004C5DBC;
 					};
 				};
 			};
-			buildConfigurationList = D8800BC91A51F8F600A909ED /* Build configuration list for PBXProject "BalancedPayments" */;
+			buildConfigurationList = D85BD8401A52052C004C5DBC /* Build configuration list for PBXProject "BalancedPayments" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,29 +183,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D8800BC51A51F8F600A909ED;
-			productRefGroup = D8800BCF1A51F8F600A909ED /* Products */;
+			mainGroup = D85BD83C1A52052C004C5DBC;
+			productRefGroup = D85BD8461A52052C004C5DBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8800BCD1A51F8F600A909ED /* BalancedPayments */,
-				D8800BE61A51F8F600A909ED /* BalancedPaymentsTests */,
+				D85BD8441A52052C004C5DBC /* BalancedPayments */,
+				D85BD85D1A52052C004C5DBC /* BalancedPaymentsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D8800BCC1A51F8F600A909ED /* Resources */ = {
+		D85BD8431A52052C004C5DBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8800BDD1A51F8F600A909ED /* Main.storyboard in Resources */,
-				D8800BE21A51F8F600A909ED /* LaunchScreen.xib in Resources */,
-				D8800BDF1A51F8F600A909ED /* Images.xcassets in Resources */,
+				D85BD8541A52052C004C5DBC /* Main.storyboard in Resources */,
+				D85BD8591A52052C004C5DBC /* LaunchScreen.xib in Resources */,
+				D85BD8561A52052C004C5DBC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8800BE51A51F8F600A909ED /* Resources */ = {
+		D85BD85C1A52052C004C5DBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,47 +215,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D8800BCA1A51F8F600A909ED /* Sources */ = {
+		D85BD8411A52052C004C5DBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8800BDA1A51F8F600A909ED /* ViewController.m in Sources */,
-				D8800BD71A51F8F600A909ED /* AppDelegate.m in Sources */,
-				D8800BD41A51F8F600A909ED /* main.m in Sources */,
+				D85BD8511A52052C004C5DBC /* ViewController.m in Sources */,
+				D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */,
+				D85BD84B1A52052C004C5DBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8800BE31A51F8F600A909ED /* Sources */ = {
+		D85BD85A1A52052C004C5DBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8800BEE1A51F8F600A909ED /* BalancedPaymentsTests.m in Sources */,
+				D85BD8651A52052C004C5DBC /* BalancedPaymentsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D8800BE91A51F8F600A909ED /* PBXTargetDependency */ = {
+		D85BD8601A52052C004C5DBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8800BCD1A51F8F600A909ED /* BalancedPayments */;
-			targetProxy = D8800BE81A51F8F600A909ED /* PBXContainerItemProxy */;
+			target = D85BD8441A52052C004C5DBC /* BalancedPayments */;
+			targetProxy = D85BD85F1A52052C004C5DBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8800BDB1A51F8F600A909ED /* Main.storyboard */ = {
+		D85BD8521A52052C004C5DBC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8800BDC1A51F8F600A909ED /* Base */,
+				D85BD8531A52052C004C5DBC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D8800BE01A51F8F600A909ED /* LaunchScreen.xib */ = {
+		D85BD8571A52052C004C5DBC /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8800BE11A51F8F600A909ED /* Base */,
+				D85BD8581A52052C004C5DBC /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D8800BEF1A51F8F600A909ED /* Debug */ = {
+		D85BD8661A52052C004C5DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		D8800BF01A51F8F600A909ED /* Release */ = {
+		D85BD8671A52052C004C5DBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,29 +339,27 @@
 			};
 			name = Release;
 		};
-		D8800BF21A51F8F600A909ED /* Debug */ = {
+		D85BD8691A52052C004C5DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BalancedPayments/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		D8800BF31A51F8F600A909ED /* Release */ = {
+		D85BD86A1A52052C004C5DBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BalancedPayments/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		D8800BF51A51F8F600A909ED /* Debug */ = {
+		D85BD86C1A52052C004C5DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		D8800BF61A51F8F600A909ED /* Release */ = {
+		D85BD86D1A52052C004C5DBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,32 +396,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8800BC91A51F8F600A909ED /* Build configuration list for PBXProject "BalancedPayments" */ = {
+		D85BD8401A52052C004C5DBC /* Build configuration list for PBXProject "BalancedPayments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8800BEF1A51F8F600A909ED /* Debug */,
-				D8800BF01A51F8F600A909ED /* Release */,
+				D85BD8661A52052C004C5DBC /* Debug */,
+				D85BD8671A52052C004C5DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8800BF11A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPayments" */ = {
+		D85BD8681A52052C004C5DBC /* Build configuration list for PBXNativeTarget "BalancedPayments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8800BF21A51F8F600A909ED /* Debug */,
-				D8800BF31A51F8F600A909ED /* Release */,
+				D85BD8691A52052C004C5DBC /* Debug */,
+				D85BD86A1A52052C004C5DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		D8800BF41A51F8F600A909ED /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */ = {
+		D85BD86B1A52052C004C5DBC /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8800BF51A51F8F600A909ED /* Debug */,
-				D8800BF61A51F8F600A909ED /* Release */,
+				D85BD86C1A52052C004C5DBC /* Debug */,
+				D85BD86D1A52052C004C5DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D8800BC61A51F8F600A909ED /* Project object */;
+	rootObject = D85BD83D1A52052C004C5DBC /* Project object */;
 }
