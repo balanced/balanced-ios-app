@@ -1,0 +1,99 @@
+PODS:
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection (= 2.5.0)
+    - AFNetworking/NSURLSession (= 2.5.0)
+    - AFNetworking/Reachability (= 2.5.0)
+    - AFNetworking/Security (= 2.5.0)
+    - AFNetworking/Serialization (= 2.5.0)
+    - AFNetworking/UIKit (= 2.5.0)
+  - AFNetworking/NSURLConnection (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - AFNetworking/UIKit (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CAAnimationBlocks (0.0.1)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - OHHTTPStubs (3.1.10):
+    - OHHTTPStubs/Core (= 3.1.10)
+  - OHHTTPStubs/Core (3.1.10)
+  - OHHTTPStubs/XCTestExpectation (3.1.10)
+  - OMGHTTPURLRQ (2.1):
+    - OMGHTTPURLRQ/RQ (= 2.1)
+  - OMGHTTPURLRQ/FormURLEncode (2.1)
+  - OMGHTTPURLRQ/RQ (2.1):
+    - OMGHTTPURLRQ/FormURLEncode
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (2.1)
+  - proj4 (4.8.0)
+  - PromiseKit (0.9.21):
+    - PromiseKit/NSNotificationCenter (= 0.9.21)
+    - PromiseKit/NSURLConnection (= 0.9.21)
+    - PromiseKit/Pause (= 0.9.21)
+    - PromiseKit/UIActionSheet (= 0.9.21)
+    - PromiseKit/UIAlertView (= 0.9.21)
+    - PromiseKit/UIView (= 0.9.21)
+    - PromiseKit/UIViewController (= 0.9.21)
+    - PromiseKit/Until (= 0.9.21)
+    - PromiseKit/When (= 0.9.21)
+  - PromiseKit-AFNetworking (0.1.5):
+    - AFNetworking (~> 2.0)
+    - PromiseKit/Promise
+  - PromiseKit/NSNotificationCenter (0.9.21):
+    - PromiseKit/Promise
+  - PromiseKit/NSURLConnection (0.9.21):
+    - OMGHTTPURLRQ
+    - PromiseKit/Promise
+  - PromiseKit/Pause (0.9.21):
+    - PromiseKit/Promise
+  - PromiseKit/Promise (0.9.21)
+  - PromiseKit/UIActionSheet (0.9.21):
+    - PromiseKit/Promise
+  - PromiseKit/UIAlertView (0.9.21):
+    - PromiseKit/Promise
+  - PromiseKit/UIView (0.9.21):
+    - PromiseKit/Promise
+  - PromiseKit/UIViewController (0.9.21):
+    - PromiseKit/Promise
+  - PromiseKit/Until (0.9.21):
+    - PromiseKit/Promise
+    - PromiseKit/When
+  - PromiseKit/When (0.9.21):
+    - PromiseKit/Promise
+  - SWRevealViewController (2.3.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - CAAnimationBlocks
+  - CocoaLumberjack (~> 1.9)
+  - OHHTTPStubs
+  - OHHTTPStubs/XCTestExpectation
+  - proj4 (~> 4.8)
+  - PromiseKit (~> 0.9)
+  - PromiseKit-AFNetworking (~> 0.1)
+  - SWRevealViewController (~> 2.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  CAAnimationBlocks: 981bfca79ac481f07957aa8357885e620637f926
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  OHHTTPStubs: 2038e929b6abb94881000524c1cb4aba0a1bb4a2
+  OMGHTTPURLRQ: f8c515dfd2f57a5d74c710978f600231f52afec5
+  proj4: 9eaa37997f1b4f6037f6dedabd1657f27a4d41ed
+  PromiseKit: 7dc63509abccf017f77fdccc4eef4bcd5762d9e5
+  PromiseKit-AFNetworking: 16db750b394dcd12aa8527eb1bb9f209a36a49f7
+  SWRevealViewController: f6d80638b8e12323e87ac79562345403a799cb77
+
+COCOAPODS: 0.35.0

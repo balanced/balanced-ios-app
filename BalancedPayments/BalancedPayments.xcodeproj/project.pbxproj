@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2514AEC2C5197DE4407DA8AF /* libPods-BalancedPaymentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D811AABACF364E04C9E8B16 /* libPods-BalancedPaymentsTests.a */; };
+		2EE282D85FDD282622756AA3 /* libPods-BalancedPayments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3899621934356AA889BDA4 /* libPods-BalancedPayments.a */; };
 		D85BD84B1A52052C004C5DBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD84A1A52052C004C5DBC /* main.m */; };
 		D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD84D1A52052C004C5DBC /* AppDelegate.m */; };
 		D85BD8511A52052C004C5DBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD8501A52052C004C5DBC /* ViewController.m */; };
@@ -27,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C3899621934356AA889BDA4 /* libPods-BalancedPayments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalancedPayments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DBB6A3C9E3AE4C15E35E46B /* Pods-BalancedPayments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPayments.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPayments/Pods-BalancedPayments.release.xcconfig"; sourceTree = "<group>"; };
+		4827AA0BBF1209E98F676A28 /* Pods-BalancedPaymentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPaymentsTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPaymentsTests/Pods-BalancedPaymentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D811AABACF364E04C9E8B16 /* libPods-BalancedPaymentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalancedPaymentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91AA5F39F618F37939C39EF7 /* Pods-BalancedPayments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPayments.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPayments/Pods-BalancedPayments.debug.xcconfig"; sourceTree = "<group>"; };
 		D85BD8451A52052C004C5DBC /* BalancedPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85BD8491A52052C004C5DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D85BD84A1A52052C004C5DBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		D85BD85E1A52052C004C5DBC /* BalancedPaymentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalancedPaymentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85BD8631A52052C004C5DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalancedPaymentsTests.m; sourceTree = "<group>"; };
+		FC6E88D479A13AFB33F9DE1C /* Pods-BalancedPaymentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPaymentsTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPaymentsTests/Pods-BalancedPaymentsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE282D85FDD282622756AA3 /* libPods-BalancedPayments.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2514AEC2C5197DE4407DA8AF /* libPods-BalancedPaymentsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5C1B9C7B25C4BB2C77A880E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91AA5F39F618F37939C39EF7 /* Pods-BalancedPayments.debug.xcconfig */,
+				0DBB6A3C9E3AE4C15E35E46B /* Pods-BalancedPayments.release.xcconfig */,
+				4827AA0BBF1209E98F676A28 /* Pods-BalancedPaymentsTests.debug.xcconfig */,
+				FC6E88D479A13AFB33F9DE1C /* Pods-BalancedPaymentsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B685F0928EDC1168EDDA5551 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C3899621934356AA889BDA4 /* libPods-BalancedPayments.a */,
+				8D811AABACF364E04C9E8B16 /* libPods-BalancedPaymentsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D85BD83C1A52052C004C5DBC = {
 			isa = PBXGroup;
 			children = (
 				D85BD8471A52052C004C5DBC /* BalancedPayments */,
 				D85BD8611A52052C004C5DBC /* BalancedPaymentsTests */,
 				D85BD8461A52052C004C5DBC /* Products */,
+				A5C1B9C7B25C4BB2C77A880E /* Pods */,
+				B685F0928EDC1168EDDA5551 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85BD8681A52052C004C5DBC /* Build configuration list for PBXNativeTarget "BalancedPayments" */;
 			buildPhases = (
+				C91145B9D829F747680F30DA /* Check Pods Manifest.lock */,
 				D85BD8411A52052C004C5DBC /* Sources */,
 				D85BD8421A52052C004C5DBC /* Frameworks */,
 				D85BD8431A52052C004C5DBC /* Resources */,
+				860BACB8EDAE3F813B0C0452 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85BD86B1A52052C004C5DBC /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */;
 			buildPhases = (
+				E68987F4D60980A41E3D1B03 /* Check Pods Manifest.lock */,
 				D85BD85A1A52052C004C5DBC /* Sources */,
 				D85BD85B1A52052C004C5DBC /* Frameworks */,
 				D85BD85C1A52052C004C5DBC /* Resources */,
+				9A7FAAC3A698AA90AC5BCEBC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +249,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		860BACB8EDAE3F813B0C0452 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BalancedPayments/Pods-BalancedPayments-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A7FAAC3A698AA90AC5BCEBC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BalancedPaymentsTests/Pods-BalancedPaymentsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91145B9D829F747680F30DA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E68987F4D60980A41E3D1B03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D85BD8411A52052C004C5DBC /* Sources */ = {
@@ -297,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -341,9 +440,11 @@
 		};
 		D85BD8691A52052C004C5DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91AA5F39F618F37939C39EF7 /* Pods-BalancedPayments.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BalancedPayments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,9 +452,11 @@
 		};
 		D85BD86A1A52052C004C5DBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBB6A3C9E3AE4C15E35E46B /* Pods-BalancedPayments.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BalancedPayments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -361,6 +464,7 @@
 		};
 		D85BD86C1A52052C004C5DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4827AA0BBF1209E98F676A28 /* Pods-BalancedPaymentsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -380,6 +484,7 @@
 		};
 		D85BD86D1A52052C004C5DBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6E88D479A13AFB33F9DE1C /* Pods-BalancedPaymentsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,6 +517,7 @@
 				D85BD86A1A52052C004C5DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D85BD86B1A52052C004C5DBC /* Build configuration list for PBXNativeTarget "BalancedPaymentsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +526,7 @@
 				D85BD86D1A52052C004C5DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
