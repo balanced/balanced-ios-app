@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2514AEC2C5197DE4407DA8AF /* libPods-BalancedPaymentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D811AABACF364E04C9E8B16 /* libPods-BalancedPaymentsTests.a */; };
 		2EE282D85FDD282622756AA3 /* libPods-BalancedPayments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3899621934356AA889BDA4 /* libPods-BalancedPayments.a */; };
+		D83AAE651A525A4F00C2DAA7 /* BAAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE641A525A4F00C2DAA7 /* BAAPI.m */; };
+		D83AAE681A525FB200C2DAA7 /* BAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE671A525FB200C2DAA7 /* BAModel.m */; };
+		D83AAE6B1A52616C00C2DAA7 /* BASubject.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE6A1A52616C00C2DAA7 /* BASubject.m */; };
+		D83AAE6E1A5262C400C2DAA7 /* BAMarketplace.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE6D1A5262C400C2DAA7 /* BAMarketplace.m */; };
+		D83AAE711A52659D00C2DAA7 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE701A52659D00C2DAA7 /* SidebarViewController.m */; };
 		D85BD84B1A52052C004C5DBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD84A1A52052C004C5DBC /* main.m */; };
 		D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD84D1A52052C004C5DBC /* AppDelegate.m */; };
 		D85BD8511A52052C004C5DBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD8501A52052C004C5DBC /* ViewController.m */; };
@@ -35,6 +40,16 @@
 		4827AA0BBF1209E98F676A28 /* Pods-BalancedPaymentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPaymentsTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPaymentsTests/Pods-BalancedPaymentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D811AABACF364E04C9E8B16 /* libPods-BalancedPaymentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalancedPaymentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91AA5F39F618F37939C39EF7 /* Pods-BalancedPayments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPayments.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPayments/Pods-BalancedPayments.debug.xcconfig"; sourceTree = "<group>"; };
+		D83AAE631A525A4F00C2DAA7 /* BAAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAAPI.h; path = models/BAAPI.h; sourceTree = "<group>"; };
+		D83AAE641A525A4F00C2DAA7 /* BAAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAAPI.m; path = models/BAAPI.m; sourceTree = "<group>"; };
+		D83AAE661A525FB200C2DAA7 /* BAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAModel.h; path = models/BAModel.h; sourceTree = "<group>"; };
+		D83AAE671A525FB200C2DAA7 /* BAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAModel.m; path = models/BAModel.m; sourceTree = "<group>"; };
+		D83AAE691A52616C00C2DAA7 /* BASubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BASubject.h; path = models/BASubject.h; sourceTree = "<group>"; };
+		D83AAE6A1A52616C00C2DAA7 /* BASubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BASubject.m; path = models/BASubject.m; sourceTree = "<group>"; };
+		D83AAE6C1A5262C400C2DAA7 /* BAMarketplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAMarketplace.h; path = models/BAMarketplace.h; sourceTree = "<group>"; };
+		D83AAE6D1A5262C400C2DAA7 /* BAMarketplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAMarketplace.m; path = models/BAMarketplace.m; sourceTree = "<group>"; };
+		D83AAE6F1A52659D00C2DAA7 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		D83AAE701A52659D00C2DAA7 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
 		D85BD8451A52052C004C5DBC /* BalancedPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85BD8491A52052C004C5DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D85BD84A1A52052C004C5DBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +108,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D83AAE621A525A1A00C2DAA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D83AAE631A525A4F00C2DAA7 /* BAAPI.h */,
+				D83AAE641A525A4F00C2DAA7 /* BAAPI.m */,
+				D83AAE691A52616C00C2DAA7 /* BASubject.h */,
+				D83AAE6A1A52616C00C2DAA7 /* BASubject.m */,
+				D83AAE661A525FB200C2DAA7 /* BAModel.h */,
+				D83AAE671A525FB200C2DAA7 /* BAModel.m */,
+				D83AAE6C1A5262C400C2DAA7 /* BAMarketplace.h */,
+				D83AAE6D1A5262C400C2DAA7 /* BAMarketplace.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		D85BD83C1A52052C004C5DBC = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +146,15 @@
 		D85BD8471A52052C004C5DBC /* BalancedPayments */ = {
 			isa = PBXGroup;
 			children = (
+				D83AAE621A525A1A00C2DAA7 /* Models */,
 				D85BD84C1A52052C004C5DBC /* AppDelegate.h */,
 				D85BD84D1A52052C004C5DBC /* AppDelegate.m */,
 				D85BD84F1A52052C004C5DBC /* ViewController.h */,
 				D85BD8501A52052C004C5DBC /* ViewController.m */,
 				D8D717A91A5212D400D8C4D6 /* RootViewController.h */,
 				D8D717AA1A5212D400D8C4D6 /* RootViewController.m */,
+				D83AAE6F1A52659D00C2DAA7 /* SidebarViewController.h */,
+				D83AAE701A52659D00C2DAA7 /* SidebarViewController.m */,
 				D85BD8521A52052C004C5DBC /* Main.storyboard */,
 				D85BD8551A52052C004C5DBC /* Images.xcassets */,
 				D85BD8571A52052C004C5DBC /* LaunchScreen.xib */,
@@ -323,9 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83AAE711A52659D00C2DAA7 /* SidebarViewController.m in Sources */,
+				D83AAE6B1A52616C00C2DAA7 /* BASubject.m in Sources */,
 				D85BD8511A52052C004C5DBC /* ViewController.m in Sources */,
 				D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */,
+				D83AAE681A525FB200C2DAA7 /* BAModel.m in Sources */,
 				D8D717AB1A5212D400D8C4D6 /* RootViewController.m in Sources */,
+				D83AAE651A525A4F00C2DAA7 /* BAAPI.m in Sources */,
+				D83AAE6E1A5262C400C2DAA7 /* BAMarketplace.m in Sources */,
 				D85BD84B1A52052C004C5DBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

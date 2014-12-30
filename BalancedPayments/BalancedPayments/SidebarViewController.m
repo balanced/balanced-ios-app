@@ -1,5 +1,5 @@
 //
-//  RootViewController.m
+//  SidebarViewController.m
 //  BalancedPayments
 //
 //  Created by Victor Lin on 2014/12/29.
@@ -7,29 +7,37 @@
 //
 
 #import "AppDelegate.h"
-#import "SWRevealViewController.h"
-#import "RootViewController.h"
+#import "SidebarViewController.h"
 
-@interface RootViewController ()
+@interface SidebarViewController ()
 
 @end
 
-@implementation RootViewController
+@implementation SidebarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    _sidebarButton.target = self.revealViewController;
-    _sidebarButton.action = @selector(revealToggle:);
-    
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [app.model load];
+    __typeof(self) __weak weakSelf = self;
+    [app.model.marketplaceUpdatedEvent subscribeObserver:^(BAMarketplace *marketplace) {
+        [weakSelf updateMarketplace];
+    }];
+    [self updateMarketplace];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)updateMarketplace {
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    if (!app.model.currentMarketplace) {
+        return;
+    }
+    self.marketplaceLabel.text = app.model.currentMarketplace.name;
+    self.balanceLabel.text = [NSString stringWithFormat:@"Balance: %.2f", app.model.currentMarketplace.balance / 100.0];
 }
 
 /*
