@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2514AEC2C5197DE4407DA8AF /* libPods-BalancedPaymentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D811AABACF364E04C9E8B16 /* libPods-BalancedPaymentsTests.a */; };
 		2EE282D85FDD282622756AA3 /* libPods-BalancedPayments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3899621934356AA889BDA4 /* libPods-BalancedPayments.a */; };
+		D838E5C71A54973C004BCB14 /* BAResource.m in Sources */ = {isa = PBXBuildFile; fileRef = D838E5C61A54973C004BCB14 /* BAResource.m */; };
 		D83AAE651A525A4F00C2DAA7 /* BAAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE641A525A4F00C2DAA7 /* BAAPI.m */; };
 		D83AAE681A525FB200C2DAA7 /* BAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE671A525FB200C2DAA7 /* BAModel.m */; };
 		D83AAE6B1A52616C00C2DAA7 /* BASubject.m in Sources */ = {isa = PBXBuildFile; fileRef = D83AAE6A1A52616C00C2DAA7 /* BASubject.m */; };
@@ -40,6 +41,8 @@
 		4827AA0BBF1209E98F676A28 /* Pods-BalancedPaymentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPaymentsTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPaymentsTests/Pods-BalancedPaymentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D811AABACF364E04C9E8B16 /* libPods-BalancedPaymentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalancedPaymentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91AA5F39F618F37939C39EF7 /* Pods-BalancedPayments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPayments.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPayments/Pods-BalancedPayments.debug.xcconfig"; sourceTree = "<group>"; };
+		D838E5C51A54973C004BCB14 /* BAResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAResource.h; path = models/BAResource.h; sourceTree = "<group>"; };
+		D838E5C61A54973C004BCB14 /* BAResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAResource.m; path = models/BAResource.m; sourceTree = "<group>"; };
 		D83AAE631A525A4F00C2DAA7 /* BAAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAAPI.h; path = models/BAAPI.h; sourceTree = "<group>"; };
 		D83AAE641A525A4F00C2DAA7 /* BAAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAAPI.m; path = models/BAAPI.m; sourceTree = "<group>"; };
 		D83AAE661A525FB200C2DAA7 /* BAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAModel.h; path = models/BAModel.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				D83AAE6A1A52616C00C2DAA7 /* BASubject.m */,
 				D83AAE661A525FB200C2DAA7 /* BAModel.h */,
 				D83AAE671A525FB200C2DAA7 /* BAModel.m */,
+				D838E5C51A54973C004BCB14 /* BAResource.h */,
+				D838E5C61A54973C004BCB14 /* BAResource.m */,
 				D83AAE6C1A5262C400C2DAA7 /* BAMarketplace.h */,
 				D83AAE6D1A5262C400C2DAA7 /* BAMarketplace.m */,
 			);
@@ -362,6 +367,7 @@
 				D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */,
 				D83AAE681A525FB200C2DAA7 /* BAModel.m in Sources */,
 				D8D717AB1A5212D400D8C4D6 /* RootViewController.m in Sources */,
+				D838E5C71A54973C004BCB14 /* BAResource.m in Sources */,
 				D83AAE651A525A4F00C2DAA7 /* BAAPI.m in Sources */,
 				D83AAE6E1A5262C400C2DAA7 /* BAMarketplace.m in Sources */,
 				D85BD84B1A52052C004C5DBC /* main.m in Sources */,

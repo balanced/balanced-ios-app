@@ -11,9 +11,8 @@
 @implementation BAMarketplace
 
 - (id) initWithData:(NSDictionary *)data {
-    self = [super init];
+    self = [super initWithData:data];
     if (self) {
-        _guid = data[@"id"];
         _name = data[@"name"];
         _domainURL = data[@"domain_url"];
         _balance = [data[@"in_escrow"] integerValue];

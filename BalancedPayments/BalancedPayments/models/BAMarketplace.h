@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 Balanced Payments. All rights reserved.
 //
 
+#import "BAResource.h"
 #import <Foundation/Foundation.h>
 
-@interface BAMarketplace : NSObject
+@interface BAMarketplace : BAResource
 
-@property (readonly, nonatomic) NSString *guid;
 @property (readonly, nonatomic) NSString *name;
 @property (readonly, nonatomic) NSString *domainURL;
 @property (readonly, nonatomic) NSInteger balance;
