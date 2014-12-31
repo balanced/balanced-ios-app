@@ -34,7 +34,8 @@
             NSArray *parts = [key componentsSeparatedByString:@"."];
             NSString *linkName = [[parts subarrayWithRange:NSMakeRange(1, parts.count - 1)] componentsJoinedByString:@"."];
             // TODO: handle pattern path link /customers/{marketplaces.owner_customer}
-            BAPage *page = [[BAPage alloc] initWithInitialPath:path api:self.api];
+            NSString *initialPath = [NSString stringWithFormat:@"%@%@", self.href, path];
+            BAPage *page = [[BAPage alloc] initWithInitialPath:initialPath api:self.api];
             [self.resources setValue:page forKey:linkName];
         }];
     }

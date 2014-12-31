@@ -44,6 +44,16 @@
     
     BAMarketplace *marketplace = page.objects[0];
     XCTAssertTrue([marketplace isKindOfClass:[BAMarketplace class]]);
+    
+    BAPage *debits = marketplace.resources[@"debits"];
+    XCTAssertTrue([debits isKindOfClass:[BAPage class]]);
+    NSString *expectedDebitsPath = [NSString stringWithFormat:@"%@/debits", marketplace.href];
+    XCTAssertEqualObjects(debits.initialPath, expectedDebitsPath);
+    
+    BAPage *credits = marketplace.resources[@"credits"];
+    XCTAssertTrue([credits isKindOfClass:[BAPage class]]);
+    NSString *expectedCreditsPath = [NSString stringWithFormat:@"%@/credits", marketplace.href];
+    XCTAssertEqualObjects(credits.initialPath, expectedCreditsPath);
     // TODO: ensure marketplace is loaded correctly
 }
 
