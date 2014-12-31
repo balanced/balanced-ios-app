@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 Balanced Payments. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <PromiseKit.h>
 #import <AFNetworking.h>
-#import <Foundation/Foundation.h>
 
 @interface BAAPI : NSObject
 

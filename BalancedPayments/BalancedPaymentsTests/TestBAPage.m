@@ -38,10 +38,9 @@
     [page loadNextPage].then(^() {
         done = YES;
     });
-    
     AGWW_WAIT_WHILE(!done, 10.0);
-    XCTAssertEqual(page.objects.count, 1);
     
+    XCTAssertEqual(page.objects.count, 1);
     BAMarketplace *marketplace = page.objects[0];
     XCTAssertTrue([marketplace isKindOfClass:[BAMarketplace class]]);
     
