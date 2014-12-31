@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 Balanced Payments. All rights reserved.
 //
 
+#import "BAPage.h"
 #import "AppDelegate.h"
 #import "SidebarViewController.h"
 
@@ -38,6 +39,9 @@
     }
     self.marketplaceLabel.text = app.model.currentMarketplace.name;
     self.balanceLabel.text = [NSString stringWithFormat:@"Balance: %.2f", app.model.currentMarketplace.balance / 100.0];
+    // XXX:
+    BAPage *debits = app.model.currentMarketplace.resources[@"debits"];
+    [debits loadNextPage];
 }
 
 /*

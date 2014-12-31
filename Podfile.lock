@@ -1,11 +1,11 @@
 PODS:
   - AFNetworking (2.5.0):
-    - AFNetworking/NSURLConnection (= 2.5.0)
-    - AFNetworking/NSURLSession (= 2.5.0)
-    - AFNetworking/Reachability (= 2.5.0)
-    - AFNetworking/Security (= 2.5.0)
-    - AFNetworking/Serialization (= 2.5.0)
-    - AFNetworking/UIKit (= 2.5.0)
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
   - AFNetworking/NSURLConnection (2.5.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
@@ -20,18 +20,21 @@ PODS:
   - AFNetworking/UIKit (2.5.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AGAsyncTestHelper (1.0):
+    - AGAsyncTestHelper/Core
+  - AGAsyncTestHelper/Core (1.0)
   - CAAnimationBlocks (0.0.1)
   - CocoaLumberjack (1.9.2):
-    - CocoaLumberjack/Extensions (= 1.9.2)
+    - CocoaLumberjack/Extensions
   - CocoaLumberjack/Core (1.9.2)
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
   - OHHTTPStubs (3.1.10):
-    - OHHTTPStubs/Core (= 3.1.10)
+    - OHHTTPStubs/Core
   - OHHTTPStubs/Core (3.1.10)
   - OHHTTPStubs/XCTestExpectation (3.1.10)
   - OMGHTTPURLRQ (2.1):
-    - OMGHTTPURLRQ/RQ (= 2.1)
+    - OMGHTTPURLRQ/RQ
   - OMGHTTPURLRQ/FormURLEncode (2.1)
   - OMGHTTPURLRQ/RQ (2.1):
     - OMGHTTPURLRQ/FormURLEncode
@@ -39,15 +42,15 @@ PODS:
   - OMGHTTPURLRQ/UserAgent (2.1)
   - proj4 (4.8.0)
   - PromiseKit (0.9.21):
-    - PromiseKit/NSNotificationCenter (= 0.9.21)
-    - PromiseKit/NSURLConnection (= 0.9.21)
-    - PromiseKit/Pause (= 0.9.21)
-    - PromiseKit/UIActionSheet (= 0.9.21)
-    - PromiseKit/UIAlertView (= 0.9.21)
-    - PromiseKit/UIView (= 0.9.21)
-    - PromiseKit/UIViewController (= 0.9.21)
-    - PromiseKit/Until (= 0.9.21)
-    - PromiseKit/When (= 0.9.21)
+    - PromiseKit/NSNotificationCenter
+    - PromiseKit/NSURLConnection
+    - PromiseKit/Pause
+    - PromiseKit/UIActionSheet
+    - PromiseKit/UIAlertView
+    - PromiseKit/UIView
+    - PromiseKit/UIViewController
+    - PromiseKit/Until
+    - PromiseKit/When
   - PromiseKit-AFNetworking (0.1.5):
     - AFNetworking (~> 2.0)
     - PromiseKit/Promise
@@ -76,6 +79,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - AGAsyncTestHelper
   - CAAnimationBlocks
   - CocoaLumberjack (~> 1.9)
   - OHHTTPStubs
@@ -87,6 +91,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  AGAsyncTestHelper: fc9d44460933d8167ae431f466ab3a09a5121582
   CAAnimationBlocks: 981bfca79ac481f07957aa8357885e620637f926
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
   OHHTTPStubs: 2038e929b6abb94881000524c1cb4aba0a1bb4a2
@@ -96,4 +101,4 @@ SPEC CHECKSUMS:
   PromiseKit-AFNetworking: 16db750b394dcd12aa8527eb1bb9f209a36a49f7
   SWRevealViewController: f6d80638b8e12323e87ac79562345403a799cb77
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.34.2

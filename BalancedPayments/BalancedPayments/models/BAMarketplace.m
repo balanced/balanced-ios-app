@@ -10,8 +10,8 @@
 
 @implementation BAMarketplace
 
-- (id) initWithData:(NSDictionary *)data {
-    self = [super initWithData:data];
+- (id) initWithData:(NSDictionary *)data links:(NSDictionary *)links api:(BAAPI *)api {
+    self = [super initWithData:data links:links api:api];
     if (self) {
         _name = data[@"name"];
         _domainURL = data[@"domain_url"];
@@ -20,6 +20,10 @@
         _production = [data[@"production"] boolValue];
     }
     return self;
+}
+
++ (NSString *)resourceName {
+    return @"marketplaces";
 }
 
 @end

@@ -17,6 +17,6 @@
 @property (readonly, nonatomic) NSInteger unsettledFees;
 @property (readonly, nonatomic) BOOL production;
 
-- (id) initWithData:(NSDictionary *)data;
+- (id) initWithData:(NSDictionary *)data links:(NSDictionary *)links api:(BAAPI *)api;
 
 @end

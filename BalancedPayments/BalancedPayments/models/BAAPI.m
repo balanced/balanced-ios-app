@@ -36,7 +36,21 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     NSString *url = [self apiURLFromPath:[NSString stringWithFormat:@"/marketplaces"]];
     PMKPromise *promise = [self.httpManager GET:url parameters:nil].then(^(id responseObject, AFHTTPRequestOperation *operation) {
         DDLogInfo(@"Getting my marketplace recived response %@", responseObject);
-        return [[BAMarketplace alloc] initWithData:responseObject[@"marketplaces"][0]];
+        return [[BAMarketplace alloc] initWithData:responseObject[@"marketplaces"][0] links:responseObject[@"links"] api:self];
+    }).catch(^(NSError *error){
+        DDLogError(@"error happened: %@", error.localizedDescription);
+        DDLogError(@"original operation: %@", error.userInfo[AFHTTPRequestOperationErrorKey]);
+        return error;
+    });
+    return promise;
+}
+
+- (PMKPromise *) loadResourcesFromPath:(NSString *)path {
+    DDLogInfo(@"Loading resources from %@", path);
+    NSString *url = [self apiURLFromPath:path];
+    PMKPromise *promise = [self.httpManager GET:url parameters:nil].then(^(id responseObject, AFHTTPRequestOperation *operation) {
+        DDLogInfo(@"Loading resources from %@ recived response %@", path, responseObject);
+        return responseObject;
     }).catch(^(NSError *error){
         DDLogError(@"error happened: %@", error.localizedDescription);
         DDLogError(@"original operation: %@", error.userInfo[AFHTTPRequestOperationErrorKey]);

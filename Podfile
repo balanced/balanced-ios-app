@@ -27,5 +27,6 @@ target 'BalancedPaymentsTests' do
     pod 'CAAnimationBlocks'
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/XCTestExpectation'
+    pod 'AGAsyncTestHelper'
 end
 
