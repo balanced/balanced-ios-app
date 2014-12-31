@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 Balanced Payments. All rights reserved.
 //
 
+#import "BAUtils.h"
 #import "BAPage.h"
 #import "BAResource.h"
 
@@ -18,16 +19,8 @@
         _guid = data[@"id"];
         _href = data[@"href"];
 
-        // TODO: should move this to utils
-        // reference to http://stackoverflow.com/questions/17558859/convert-iso-8601-to-nsdate
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
-        // Always use this locale when parsing fixed format date strings
-        NSLocale *posix = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
-        [formatter setLocale:posix];
-        
-        _createdAt = [formatter dateFromString:data[@"created_at"]];
-        _updatedAt = [formatter dateFromString:data[@"updated_at"]];
+        _createdAt = [BAUtils dateFromISOString:data[@"created_at"]];
+        _updatedAt = [BAUtils dateFromISOString:data[@"updated_at"]];
         
         _resources = [NSMutableDictionary dictionary];
         [links enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *path, BOOL *stop) {
