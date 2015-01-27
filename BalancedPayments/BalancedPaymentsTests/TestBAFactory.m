@@ -46,14 +46,15 @@
 }
 
 - (void)testRegisterResources {
-    BAFactory *factory = [BAFactory factory];
+    BAAPI *api = [BAAPI api];
+    BAFactory *factory = [BAFactory factoryWithAPI:api];
     [factory registerResource:[BAMarketplace class]];
     XCTAssertEqualObjects(factory.nameToClass, @{[BAMarketplace resourceName]: [BAMarketplace class]});
 }
 
 - (void)testCreateResource {
-    BAFactory *factory = [BAFactory factory];
     BAAPI *api = [BAAPI api];
+    BAFactory *factory = [BAFactory factoryWithAPI:api];
     [factory registerResource:[BAMarketplace class]];
     
     NSDictionary *data = @{
@@ -64,7 +65,7 @@
         @"production": [NSNumber numberWithBool:YES],
     };
     NSDictionary *links = @{};
-    BAMarketplace *marketplace = (BAMarketplace *)[factory createResourceForName:@"marketplaces" data:data links:links api:api];
+    BAMarketplace *marketplace = (BAMarketplace *)[factory createResourceForName:@"marketplaces" data:data links:links];
     XCTAssertTrue([marketplace isKindOfClass:[BAMarketplace class]]);
     XCTAssertEqualObjects(marketplace.name, @"test mp");
     XCTAssertEqualObjects(marketplace.domainURL, @"http://foobar.com");

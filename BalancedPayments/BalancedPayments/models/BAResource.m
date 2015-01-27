@@ -12,10 +12,10 @@
 
 @implementation BAResource
 
-- (id) initWithData:(NSDictionary *)data links:(NSDictionary *)links api:(BAAPI *)api {
+- (id) initWithData:(NSDictionary *)data links:(NSDictionary *)links factory:(BAFactory *)factory {
     self = [super init];
     if (self) {
-        _api = api;
+        _factory = factory;
         _guid = data[@"id"];
         _href = data[@"href"];
 
@@ -28,7 +28,7 @@
             NSString *linkName = [[parts subarrayWithRange:NSMakeRange(1, parts.count - 1)] componentsJoinedByString:@"."];
             // TODO: handle pattern path link /customers/{marketplaces.owner_customer}
             NSString *initialPath = [NSString stringWithFormat:@"%@%@", self.href, path];
-            BAPage *page = [[BAPage alloc] initWithInitialPath:initialPath api:self.api];
+            BAPage *page = [BAPage pageWithPath:initialPath factory:self.factory];
             [self.resources setValue:page forKey:linkName];
         }];
     }

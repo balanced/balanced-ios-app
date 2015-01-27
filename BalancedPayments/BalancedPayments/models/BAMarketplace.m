@@ -10,8 +10,8 @@
 
 @implementation BAMarketplace
 
-- (id) initWithData:(NSDictionary *)data links:(NSDictionary *)links api:(BAAPI *)api {
-    self = [super initWithData:data links:links api:api];
+- (id) initWithData:(NSDictionary *)data links:(NSDictionary *)links factory:(BAFactory *)factory {
+    self = [super initWithData:data links:links factory:factory];
     if (self) {
         _name = data[@"name"];
         _domainURL = data[@"domain_url"];

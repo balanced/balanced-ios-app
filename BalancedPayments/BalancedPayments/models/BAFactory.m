@@ -7,12 +7,14 @@
 //
 
 #import "BAFactory.h"
+#import "BAResource.h"
 
 @implementation BAFactory
 
-- (id) init {
+- (id) initWithAPI:(BAAPI *)api {
     self = [super init];
     if (self) {
+        _api = api;
         _nameToClass = [NSMutableDictionary dictionary];
     }
     return self;
@@ -22,13 +24,13 @@
     [self.nameToClass setObject:resClass forKey:[resClass resourceName]];
 }
 
-- (BAResource *) createResourceForName:(NSString *)name data:(NSDictionary *)data links:(NSDictionary *)links api:(BAAPI *)api {
+- (BAResource *) createResourceForName:(NSString *)name data:(NSDictionary *)data links:(NSDictionary *)links {
     BAResource *resource = nil;
     Class resClass = [self.nameToClass objectForKey:name];
     if (!resClass) {
         return resource;
     }
-    resource = [(BAResource *)[resClass alloc] initWithData:data links:links api:api];
+    resource = [(BAResource *)[resClass alloc] initWithData:data links:links factory:self];
     return resource;
 }
 
@@ -44,8 +46,8 @@
     return name;
 }
 
-+ (BAFactory *) factory {
-    return [[BAFactory alloc] init];
++ (BAFactory *) factoryWithAPI:(BAAPI *)api {
+    return [[BAFactory alloc] initWithAPI:api];
 }
 
 @end

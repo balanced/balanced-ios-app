@@ -29,12 +29,15 @@
 }
 
 - (void)testPage {
-    BAAPI *api = [[BAAPI alloc] initWithBaseURL:@"https://api.balancedpayments.com"];
+    BAAPI *api = [BAAPI api];
     // TODO: generate a new marketplace for testing
     api.apiKey = @"ak-test-1WN6czAWMOebylcjAJnBXbO7GX0awPWCG";
     
+    BAFactory *factory = [BAFactory factoryWithAPI:api];
+    [factory registerResource:[BAMarketplace class]];
+    
     __block BOOL done = NO;
-    BAPage *page = [[BAPage alloc] initWithInitialPath:@"/marketplaces" api:api];
+    BAPage *page = [BAPage pageWithPath:@"/marketplaces" factory:factory];
     [page loadNextPage].then(^() {
         done = YES;
     });

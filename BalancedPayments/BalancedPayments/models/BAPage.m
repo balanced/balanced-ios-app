@@ -11,12 +11,12 @@
 
 @implementation BAPage
 
-- (id) initWithInitialPath:(NSString *)path api:(BAAPI *)api {
+- (id) initWithPath:(NSString *)path factory:(BAFactory *)factory {
     self = [super init];
     if (self) {
         _initialPath = path;
         _nextPath = path;
-        _api = api;
+        _factory = factory;
         _objects = [NSMutableArray array];
         _pageLoadedEvent = [BASubject subject];
     }
@@ -28,7 +28,7 @@
         // TODO: raise error
     }
     __typeof(self) __weak weakSelf = self;
-    PMKPromise *promise = [self.api loadResourcesFromPath:self.nextPath].then(^(NSDictionary *response) {
+    PMKPromise *promise = [self.factory.api loadResourcesFromPath:self.nextPath].then(^(NSDictionary *response) {
         NSLog(@"xxx %@", response);
         id nextPage = response[@"next"];
         if ([nextPage isEqual:[NSNull null]]) {
@@ -37,10 +37,11 @@
             [weakSelf _updateNextPath:nextPage];
         }
         NSMutableArray *newObjects = [NSMutableArray array];
-        NSArray *pageObjects = response[@"marketplaces"];
+        NSString *resourceName = [BAFactory resourceNameFromDict:response];
+        NSArray *pageObjects = response[resourceName];
+        NSDictionary *links = response[@"links"];
         [pageObjects enumerateObjectsUsingBlock:^(NSDictionary *data, NSUInteger idx, BOOL *stop) {
-            // TODO: determine what kind of resource it is
-            BAResource *object = [[BAMarketplace alloc] initWithData:data links:response[@"links"] api:self.api];
+            BAResource *object = [weakSelf.factory createResourceForName:resourceName data:data links:links];
             [newObjects addObject:object];
             
         }];
@@ -54,6 +55,10 @@
 
 - (void) _updateNextPath:(NSString *)nextPath {
     _nextPath = nextPath;
+}
+
++ (BAPage *) pageWithPath:(NSString *)path factory:(BAFactory *)factory {
+    return [[BAPage alloc] initWithPath:path factory:factory];
 }
 
 @end
