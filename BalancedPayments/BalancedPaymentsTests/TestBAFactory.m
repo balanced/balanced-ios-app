@@ -51,4 +51,26 @@
     XCTAssertEqualObjects(factory.nameToClass, @{[BAMarketplace resourceName]: [BAMarketplace class]});
 }
 
+- (void)testCreateResource {
+    BAFactory *factory = [BAFactory factory];
+    BAAPI *api = [BAAPI api];
+    [factory registerResource:[BAMarketplace class]];
+    
+    NSDictionary *data = @{
+        @"name": @"test mp",
+        @"domain_url": @"http://foobar.com",
+        @"in_escrow": @1234,
+        @"unsettled_fees": @5678,
+        @"production": [NSNumber numberWithBool:YES],
+    };
+    NSDictionary *links = @{};
+    BAMarketplace *marketplace = (BAMarketplace *)[factory createResourceForName:@"marketplaces" data:data links:links api:api];
+    XCTAssertTrue([marketplace isKindOfClass:[BAMarketplace class]]);
+    XCTAssertEqualObjects(marketplace.name, @"test mp");
+    XCTAssertEqualObjects(marketplace.domainURL, @"http://foobar.com");
+    XCTAssertEqual(marketplace.balance, 1234);
+    XCTAssertEqual(marketplace.unsettledFees, 5678);
+    XCTAssertTrue(marketplace.production);
+}
+
 @end

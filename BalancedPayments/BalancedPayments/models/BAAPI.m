@@ -15,6 +15,10 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 
 @implementation BAAPI
 
+- (id) init {
+    return [self initWithBaseURL:@"https://api.balancedpayments.com"];
+}
+
 - (id) initWithBaseURL:(NSString *)baseURL {
     self = [super init];
     if (self) {
@@ -62,6 +66,10 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 - (void) setApiKey:(NSString *)apiKey {
     _apiKey = apiKey;
     [_httpManager.requestSerializer setAuthorizationHeaderFieldWithUsername:apiKey password:@""];
+}
+
++ (BAAPI *) api {
+    return [[BAAPI alloc] init];
 }
 
 @end

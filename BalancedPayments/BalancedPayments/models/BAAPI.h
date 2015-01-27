@@ -24,5 +24,7 @@
 // load resources
 - (PMKPromise *) loadResourcesFromPath:(NSString *)path;
 
++ (BAAPI *) api;
+    
 @end
 
