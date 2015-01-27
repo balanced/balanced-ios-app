@@ -32,9 +32,9 @@
         NSLog(@"xxx %@", response);
         id nextPage = response[@"next"];
         if ([nextPage isEqual:[NSNull null]]) {
-            weakSelf.nextPath = nil;
+            [weakSelf _updateNextPath:nil];
         } else {
-            weakSelf.nextPath = nextPage;
+            [weakSelf _updateNextPath:nextPage];
         }
         NSMutableArray *newObjects = [NSMutableArray array];
         NSArray *pageObjects = response[@"marketplaces"];
@@ -50,6 +50,10 @@
     });
     // TODO: handle error
     return promise;
+}
+
+- (void) _updateNextPath:(NSString *)nextPath {
+    _nextPath = nextPath;
 }
 
 @end

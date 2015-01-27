@@ -15,7 +15,7 @@
 
 @property (readonly, nonatomic, weak) BAAPI *api;
 @property (readonly, nonatomic) NSString *initialPath;
-@property (nonatomic) NSString *nextPath;
+@property (readonly, nonatomic) NSString *nextPath;
 @property (readonly, nonatomic) NSMutableArray *objects;
 
 // called when a new page is loaded
