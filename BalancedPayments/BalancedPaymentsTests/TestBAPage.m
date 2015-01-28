@@ -57,7 +57,6 @@
     
     BAPage *ownerCustomer = marketplace.resources[@"owner_customer"];
     XCTAssertTrue([ownerCustomer isKindOfClass:[BAPage class]]);
-    NSString *expectedOwnerPath = [NSString stringWithFormat:@"/customers/%@", @"FIXME"];
     XCTAssert([ownerCustomer.initialPath hasPrefix:@"/customers/CU"]);
     
     // TODO: ensure marketplace is loaded correctly
