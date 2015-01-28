@@ -10,6 +10,7 @@
 #import "BAFactory.h"
 #import "BAResource.h"
 #import "BAMarketplace.h"
+#import "BADebit.h"
 
 static const int ddLogLevel = LOG_LEVEL_INFO;
 
@@ -31,6 +32,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 // TODO: find a better way to do this instead of importing and adding them manually here?
 - (void) registerAllResources {
     [self registerResource:[BAMarketplace class]];
+    [self registerResource:[BADebit class]];
     // TODO: add more resources class here
 }
 

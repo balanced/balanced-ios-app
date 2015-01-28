@@ -27,6 +27,8 @@
 		D85BD8651A52052C004C5DBC /* BalancedPaymentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */; };
 		D86A06741A784D09008FFF96 /* BAFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D86A06731A784D09008FFF96 /* BAFactory.m */; };
 		D86A06761A785084008FFF96 /* TestBAFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D86A06751A785084008FFF96 /* TestBAFactory.m */; };
+		D86A06791A785FEC008FFF96 /* BADebit.m in Sources */ = {isa = PBXBuildFile; fileRef = D86A06781A785FEC008FFF96 /* BADebit.m */; };
+		D86A067B1A78624B008FFF96 /* TestResource.m in Sources */ = {isa = PBXBuildFile; fileRef = D86A067A1A78624B008FFF96 /* TestResource.m */; };
 		D8D717AB1A5212D400D8C4D6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D717AA1A5212D400D8C4D6 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,9 @@
 		D86A06721A784D09008FFF96 /* BAFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAFactory.h; path = models/BAFactory.h; sourceTree = "<group>"; };
 		D86A06731A784D09008FFF96 /* BAFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAFactory.m; path = models/BAFactory.m; sourceTree = "<group>"; };
 		D86A06751A785084008FFF96 /* TestBAFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBAFactory.m; sourceTree = "<group>"; };
+		D86A06771A785FEC008FFF96 /* BADebit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BADebit.h; path = models/BADebit.h; sourceTree = "<group>"; };
+		D86A06781A785FEC008FFF96 /* BADebit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BADebit.m; path = models/BADebit.m; sourceTree = "<group>"; };
+		D86A067A1A78624B008FFF96 /* TestResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestResource.m; sourceTree = "<group>"; };
 		D8D717A91A5212D400D8C4D6 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		D8D717AA1A5212D400D8C4D6 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FC6E88D479A13AFB33F9DE1C /* Pods-BalancedPaymentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedPaymentsTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BalancedPaymentsTests/Pods-BalancedPaymentsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +144,8 @@
 				D838E5C61A54973C004BCB14 /* BAResource.m */,
 				D83AAE6C1A5262C400C2DAA7 /* BAMarketplace.h */,
 				D83AAE6D1A5262C400C2DAA7 /* BAMarketplace.m */,
+				D86A06771A785FEC008FFF96 /* BADebit.h */,
+				D86A06781A785FEC008FFF96 /* BADebit.m */,
 				D86A06721A784D09008FFF96 /* BAFactory.h */,
 				D86A06731A784D09008FFF96 /* BAFactory.m */,
 				D8108D4C1A54B45D0062323F /* BAUtils.h */,
@@ -200,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				D85BD8641A52052C004C5DBC /* BalancedPaymentsTests.m */,
+				D86A067A1A78624B008FFF96 /* TestResource.m */,
 				D838E5CB1A54A44B004BCB14 /* TestBAPage.m */,
 				D86A06751A785084008FFF96 /* TestBAFactory.m */,
 				D85BD8621A52052C004C5DBC /* Supporting Files */,
@@ -389,6 +397,7 @@
 				D85BD84E1A52052C004C5DBC /* AppDelegate.m in Sources */,
 				D83AAE681A525FB200C2DAA7 /* BAModel.m in Sources */,
 				D8D717AB1A5212D400D8C4D6 /* RootViewController.m in Sources */,
+				D86A06791A785FEC008FFF96 /* BADebit.m in Sources */,
 				D838E5C71A54973C004BCB14 /* BAResource.m in Sources */,
 				D83AAE651A525A4F00C2DAA7 /* BAAPI.m in Sources */,
 				D8108D4E1A54B45D0062323F /* BAUtils.m in Sources */,
@@ -403,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85BD8651A52052C004C5DBC /* BalancedPaymentsTests.m in Sources */,
+				D86A067B1A78624B008FFF96 /* TestResource.m in Sources */,
 				D86A06761A785084008FFF96 /* TestBAFactory.m in Sources */,
 				D838E5CC1A54A44B004BCB14 /* TestBAPage.m in Sources */,
 			);

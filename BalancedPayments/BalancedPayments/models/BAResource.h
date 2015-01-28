@@ -21,5 +21,6 @@
 - (id) initWithData:(NSDictionary *)data links:(NSDictionary *)links factory:(BAFactory *)factory;
 
 + (NSString *)resourceName;
++ (NSString *)resolveLink:(NSString *)link data:(NSDictionary *)data;
 
 @end
