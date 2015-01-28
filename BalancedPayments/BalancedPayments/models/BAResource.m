@@ -54,7 +54,6 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         NSArray *parts = [path componentsSeparatedByString:@"."];
         if (parts.count != 2) {
             DDLogError(@"We expected to see the link path looks like 'resource_name.attribute' , but we got %@ instead", path);
-            // TODO: raise error
             succeeded = NO;
             (*stop) = YES;
             return;
@@ -62,7 +61,6 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         NSString *resName = parts[0];
         if (![resName isEqualToString:[self resourceName]]) {
             DDLogError(@"Unknown resource name %@, expected %@, cannot resolve", resName, [self resourceName]);
-            // TODO: raise error
             succeeded = NO;
             (*stop) = YES;
             return;
@@ -75,14 +73,18 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
                 value = links[suffixKey];
             }
         }
-        // TODO: if value is not available
-        DDLogDebug(@"Resolved value %@ to %@", path, value);
-        NSRange wholeRange = [match rangeAtIndex:0];
-        NSString *previousPart = [link substringWithRange:NSMakeRange(lastPos, (wholeRange.location - lastPos))];
-        NSString *replacedPart = [NSString stringWithFormat:@"%@", value];
-        [resultParts addObject:previousPart];
-        [resultParts addObject:replacedPart];
-        lastPos = wholeRange.location + wholeRange.length;
+        
+        if (!value || [value isEqual:[NSNull null]]) {
+            DDLogError(@"Value %@ not found in given data %@", path, data);
+        } else {
+            DDLogDebug(@"Resolved value %@ to %@", path, value);
+            NSRange wholeRange = [match rangeAtIndex:0];
+            NSString *previousPart = [link substringWithRange:NSMakeRange(lastPos, (wholeRange.location - lastPos))];
+            NSString *replacedPart = [NSString stringWithFormat:@"%@", value];
+            [resultParts addObject:previousPart];
+            [resultParts addObject:replacedPart];
+            lastPos = wholeRange.location + wholeRange.length;
+        }
     }];
     
     NSString *tailPart = [link substringWithRange:NSMakeRange(lastPos, link.length - lastPos)];
