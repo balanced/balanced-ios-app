@@ -49,13 +49,17 @@
     
     BAPage *debits = marketplace.resources[@"debits"];
     XCTAssertTrue([debits isKindOfClass:[BAPage class]]);
-    NSString *expectedDebitsPath = [NSString stringWithFormat:@"%@/debits", marketplace.href];
-    XCTAssertEqualObjects(debits.initialPath, expectedDebitsPath);
+    XCTAssertEqualObjects(debits.initialPath, @"/debits");
     
     BAPage *credits = marketplace.resources[@"credits"];
     XCTAssertTrue([credits isKindOfClass:[BAPage class]]);
-    NSString *expectedCreditsPath = [NSString stringWithFormat:@"%@/credits", marketplace.href];
-    XCTAssertEqualObjects(credits.initialPath, expectedCreditsPath);
+    XCTAssertEqualObjects(credits.initialPath, @"/credits");
+    
+    BAPage *ownerCustomer = marketplace.resources[@"owner_customer"];
+    XCTAssertTrue([ownerCustomer isKindOfClass:[BAPage class]]);
+    NSString *expectedOwnerPath = [NSString stringWithFormat:@"/customers/%@", @"FIXME"];
+    XCTAssert([ownerCustomer.initialPath hasPrefix:@"/customers/CU"]);
+    
     // TODO: ensure marketplace is loaded correctly
 }
 

@@ -28,10 +28,12 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         _resources = [NSMutableDictionary dictionary];
         [links enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *path, BOOL *stop) {
             NSArray *parts = [key componentsSeparatedByString:@"."];
+            if (![parts[0] isEqualToString:[self.class resourceName]]) {
+                return;
+            }
             NSString *linkName = [[parts subarrayWithRange:NSMakeRange(1, parts.count - 1)] componentsJoinedByString:@"."];
-            // TODO: handle pattern path link /customers/{marketplaces.owner_customer}
-            NSString *initialPath = [NSString stringWithFormat:@"%@%@", self.href, path];
-            BAPage *page = [BAPage pageWithPath:initialPath factory:self.factory];
+            NSString *resolvedPath = [self.class resolveLink:path data:data];
+            BAPage *page = [BAPage pageWithPath:resolvedPath factory:self.factory];
             [self.resources setValue:page forKey:linkName];
         }];
     }
