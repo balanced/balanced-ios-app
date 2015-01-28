@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
-    _model = [[BAModel alloc] init];
+    _model = [BAModel model];
     // XXX:
     _model.api.apiKey = @"ak-test-1WN6czAWMOebylcjAJnBXbO7GX0awPWCG";
     return YES;

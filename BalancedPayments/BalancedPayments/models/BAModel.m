@@ -7,28 +7,43 @@
 //
 
 #import "BAModel.h"
+#import "BAPage.h"
+
+@interface BAModel()
+
+@property (readonly, nonatomic) BAPage *marketplacePage;
+
+@end
 
 @implementation BAModel
 
 - (id) init {
     self = [super init];
     if (self) {
-        _api = [[BAAPI alloc] initWithBaseURL:@"https://api.balancedpayments.com"];
+        _api = [BAAPI api];
+        _factory = [BAFactory factoryWithAPI:self.api];
+        _marketplacePage = [BAPage pageWithPath:@"/marketplaces" factory:self.factory];
         _marketplaceUpdatedEvent = [BASubject subject];
+        
+        [self.factory registerAllResources];
     }
     return self;
 }
 
 - (void) load {
     __typeof(self) __weak weakSelf = self;
-    [self.api myMarketplace].then(^(BAMarketplace *marketplace) {
-        weakSelf.currentMarketplace = marketplace;
+    [self.marketplacePage loadNextPage].then(^(NSArray *objects) {
+        weakSelf.currentMarketplace = self.marketplacePage.objects[0];
     });
 }
 
 - (void) setCurrentMarketplace:(BAMarketplace *)currentMarketplace {
     _currentMarketplace = currentMarketplace;
     [self.marketplaceUpdatedEvent notifyObserversWithObj:currentMarketplace];
+}
+
++ (BAModel *)model {
+    return [[BAModel alloc] init];
 }
 
 @end

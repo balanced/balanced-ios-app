@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "BAAPI.h"
+#import "BAFactory.h"
 #import "BASubject.h"
 #import "BAMarketplace.h"
 
 @interface BAModel : NSObject
 
 @property (readonly, nonatomic) BAAPI *api;
+@property (readonly, nonatomic) BAFactory *factory;
 // current marketplace
 @property (nonatomic) BAMarketplace *currentMarketplace;
 
@@ -23,4 +25,6 @@
 // load model
 - (void) load;
 
++ (BAModel *)model;
+    
 @end

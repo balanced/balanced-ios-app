@@ -18,9 +18,6 @@
 
 - (id) initWithBaseURL:(NSString *)baseURL;
 
-// get current marketplace
-- (PMKPromise *) myMarketplace;
-
 // load resources
 - (PMKPromise *) loadResourcesFromPath:(NSString *)path;
 

@@ -31,23 +31,22 @@
     PMKPromise *promise = [self.factory.api loadResourcesFromPath:self.nextPath].then(^(NSDictionary *response) {
         NSLog(@"xxx %@", response);
         id nextPage = response[@"next"];
-        if ([nextPage isEqual:[NSNull null]]) {
+        if (!nextPage || [nextPage isEqual:[NSNull null]]) {
             [weakSelf _updateNextPath:nil];
         } else {
             [weakSelf _updateNextPath:nextPage];
         }
-        NSMutableArray *newObjects = [NSMutableArray array];
         NSString *resourceName = [BAFactory resourceNameFromDict:response];
         NSArray *pageObjects = response[resourceName];
         NSDictionary *links = response[@"links"];
+        __block NSMutableArray *newObjects = [NSMutableArray array];
         [pageObjects enumerateObjectsUsingBlock:^(NSDictionary *data, NSUInteger idx, BOOL *stop) {
             BAResource *object = [weakSelf.factory createResourceForName:resourceName data:data links:links];
             [newObjects addObject:object];
-            
         }];
         [self.objects addObjectsFromArray:newObjects];
         [weakSelf.pageLoadedEvent notifyObserversWithObj:newObjects];
-        return ;
+        return newObjects;
     });
     // TODO: handle error
     return promise;

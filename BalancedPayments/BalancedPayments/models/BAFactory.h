@@ -21,6 +21,8 @@
 - (id) initWithAPI:(BAAPI *)api;
 // register a class for a given name
 - (void) registerResource:(Class)resClass;
+// register all available resources
+- (void) registerAllResources;
 // create a resource for given name, data and links
 - (BAResource *) createResourceForName:(NSString *)name data:(NSDictionary *)data links:(NSDictionary *)links;
 

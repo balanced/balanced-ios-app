@@ -6,8 +6,12 @@
 //  Copyright (c) 2015年 Balanced Payments. All rights reserved.
 //
 
+#import <DDLog.h>
 #import "BAFactory.h"
 #import "BAResource.h"
+#import "BAMarketplace.h"
+
+static const int ddLogLevel = LOG_LEVEL_INFO;
 
 @implementation BAFactory
 
@@ -24,14 +28,19 @@
     [self.nameToClass setObject:resClass forKey:[resClass resourceName]];
 }
 
+// TODO: find a better way to do this instead of importing and adding them manually here?
+- (void) registerAllResources {
+    [self registerResource:[BAMarketplace class]];
+    // TODO: add more resources class here
+}
+
 - (BAResource *) createResourceForName:(NSString *)name data:(NSDictionary *)data links:(NSDictionary *)links {
-    BAResource *resource = nil;
     Class resClass = [self.nameToClass objectForKey:name];
     if (!resClass) {
-        return resource;
+        DDLogError(@"Failed to create resource for given name %@, no class found", name);
+        return nil;
     }
-    resource = [(BAResource *)[resClass alloc] initWithData:data links:links factory:self];
-    return resource;
+    return [(BAResource *)[resClass alloc] initWithData:data links:links factory:self];
 }
 
 + (NSString *) resourceNameFromDict:(NSDictionary *)dict {
